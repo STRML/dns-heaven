@@ -118,8 +118,8 @@ func (r *Resolver) update(d *DnsInfo) error {
 	if standard == nil {
 		standard = &ResolverInfo{
 			Nameservers: []string{
+				"1.1.1.1:53",
 				"8.8.8.8:53",
-				"8.8.4.4:53",
 			},
 		}
 	}
